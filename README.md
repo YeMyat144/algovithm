@@ -2,7 +2,7 @@
 
 An interactive web application for visualizing sorting and pathfinding algorithms. This educational tool helps users understand how different algorithms work through step-by-step visual animations.
 
-![Algorithm Visualizer Demo](https://i.ibb.co/hRmjwB00/Screenshot-2025-04-04-000608.png)
+![Algovithm Demo](https://i.ibb.co/5g9Gbc3X/Screenshot-2025-04-04-013459.png)
 
 ## Features
 
@@ -24,13 +24,13 @@ An interactive web application for visualizing sorting and pathfinding algorithm
 
 ## Demo
 
-Check out the live demo: [Algorithm Visualizer Demo](https://algorithmvizualizer.vercel.app/)
+Check out the live demo: [Algovithm Demo](https://algovithm.vercel.app/)
 
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/algorithm-visualizer.git
+git clone https://github.com/yourusername/algovithm.git
 
 # Navigate to the project directory
 cd algorithm-visualizer

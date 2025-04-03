@@ -396,7 +396,6 @@ export default function SortingVisualizer() {
       </div>
 
       <div className="mt-4">
-        <h3 className="font-medium mb-2">Algorithm Description:</h3>
         <div className="bg-gray-50 p-4 rounded-md">
           {algorithm === "insertion" && (
             <p>

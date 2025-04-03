@@ -539,27 +539,6 @@ export default function PathfindingVisualizer() {
         )}
       </div>
 
-      <div className="mt-4">
-        <h3 className="font-medium mb-2">Algorithm Description:</h3>
-        <div className="bg-gray-50 p-4 rounded-md">
-          {algorithm === "dijkstra" && (
-            <p>
-              <strong>Dijkstra's Algorithm:</strong> A weighted graph search algorithm that finds the shortest path
-              between nodes. It guarantees the shortest path and works by visiting the nodes with the smallest known
-              distance first. Time Complexity: O(V²) or O(E + V log V) with a priority queue.
-            </p>
-          )}
-          {algorithm === "astar" && (
-            <p>
-              <strong>A* Algorithm:</strong> An informed search algorithm that uses a heuristic function to guide its
-              search. It combines Dijkstra's algorithm (which favors vertices close to the starting point) with a greedy
-              Best-First-Search (which favors vertices close to the goal). Time Complexity: O(E) in the worst case, but
-              typically much faster in practice due to the heuristic.
-            </p>
-          )}
-        </div>
-      </div>
-
       <div className="flex justify-center gap-4 text-sm">
         <div className="flex items-center gap-2">
           <div className="w-4 h-4 bg-green-500"></div>
@@ -582,6 +561,28 @@ export default function PathfindingVisualizer() {
           <span>Path Node</span>
         </div>
       </div>
+
+      <div className="mt-4">
+        <div className="bg-gray-50 p-4 rounded-md">
+          {algorithm === "dijkstra" && (
+            <p>
+              <strong>Dijkstra's Algorithm:</strong> A weighted graph search algorithm that finds the shortest path
+              between nodes. It guarantees the shortest path and works by visiting the nodes with the smallest known
+              distance first. Time Complexity: O(V²) or O(E + V log V) with a priority queue.
+            </p>
+          )}
+          {algorithm === "astar" && (
+            <p>
+              <strong>A* Algorithm:</strong> An informed search algorithm that uses a heuristic function to guide its
+              search. It combines Dijkstra's algorithm (which favors vertices close to the starting point) with a greedy
+              Best-First-Search (which favors vertices close to the goal). Time Complexity: O(E) in the worst case, but
+              typically much faster in practice due to the heuristic.
+            </p>
+          )}
+        </div>
+      </div>
+
+      
     </div>
   )
 }

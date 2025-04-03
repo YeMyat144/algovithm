@@ -12,8 +12,8 @@ export default function AlgorithmVisualizer() {
     <div className="bg-white rounded-lg shadow-md p-6">
       <Tabs defaultValue="sorting" onValueChange={setActiveTab}>
         <TabsList className="grid w-full grid-cols-2 mb-6">
-          <TabsTrigger value="sorting">Sorting Algorithms</TabsTrigger>
-          <TabsTrigger value="pathfinding">Pathfinding Algorithms</TabsTrigger>
+          <TabsTrigger value="sorting">Sorting</TabsTrigger>
+          <TabsTrigger value="pathfinding">Pathfinding</TabsTrigger>
         </TabsList>
         <TabsContent value="sorting">
           <SortingVisualizer />
