@@ -24,7 +24,7 @@ An interactive web application for visualizing sorting and pathfinding algorithm
 
 ## Demo
 
-Check out the live demo: [Algorithm Visualizer Demo](https://your-demo-link-here.com)
+Check out the live demo: [Algorithm Visualizer Demo](https://algorithmvizualizer.vercel.app/)
 
 ## Installation
 
