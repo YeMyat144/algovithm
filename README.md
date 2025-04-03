@@ -2,7 +2,7 @@
 
 An interactive web application for visualizing sorting and pathfinding algorithms. This educational tool helps users understand how different algorithms work through step-by-step visual animations.
 
-![Algorithm Visualizer Demo](https://ibb.co/Y7LMwcgg)
+![Algorithm Visualizer Demo](https://i.ibb.co/hRmjwB00/Screenshot-2025-04-04-000608.png)
 
 ## Features
 
