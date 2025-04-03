@@ -288,7 +288,6 @@ export default function SortingVisualizer() {
       }
     }
   }
-
   // Get max value for scaling
   const maxValue = Math.max(...array.map((item) => item.value))
 
