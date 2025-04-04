@@ -2,7 +2,7 @@
 
 An interactive web application for visualizing sorting and pathfinding algorithms. This educational tool helps users understand how different algorithms work through step-by-step visual animations.
 
-![Algovithm Demo](https://i.ibb.co/5g9Gbc3X/Screenshot-2025-04-04-013459.png)
+![Algovithm Demo](https://i.ibb.co/rKbFyp2y/Screenshot-2025-04-04-140918.png)
 
 ## Features
 

@@ -22,7 +22,7 @@ export default function SortingVisualizer() {
   const [isRunning, setIsRunning] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
   const [customInput, setCustomInput] = useState("")
-  const [arraySize, setArraySize] = useState(20)
+  const [arraySize, setArraySize] = useState(15)
 
   const animationTimeoutRef = useRef<NodeJS.Timeout | null>(null)
   const animationsRef = useRef<any[]>([])
@@ -321,10 +321,10 @@ export default function SortingVisualizer() {
               min="5"
               max="100"
               value={arraySize}
-              onChange={(e) => setArraySize(Number.parseInt(e.target.value) || 20)}
+              onChange={(e) => setArraySize(Number.parseInt(e.target.value) || 15)}
               className="w-20"
             />
-            <Button onClick={() => generateRandomArray(arraySize)}>Generate Random</Button>
+            <Button onClick={() => generateRandomArray(arraySize)}>Random</Button>
           </div>
         </div>
 
@@ -373,18 +373,18 @@ export default function SortingVisualizer() {
         </Button>
       </div>
 
-      <div className="h-64 flex items-end justify-center gap-1 border rounded-md p-4 bg-gray-50">
+      <div className="h-64 flex items-end justify-center gap-1 border rounded-md p-4">
         {array.map((item, index) => (
           <div
             key={index}
             className={`w-full transition-all duration-200 ${
               item.isSorted
-                ? "bg-green-500"
+                ? "bg-blue-500"
                 : item.isComparing
                   ? "bg-yellow-500"
                   : item.isSwapping
                     ? "bg-red-500"
-                    : "bg-blue-500"
+                    : "bg-green-500"
             }`}
             style={{
               height: `${(item.value / maxValue) * 100}%`,
@@ -394,9 +394,27 @@ export default function SortingVisualizer() {
           ></div>
         ))}
       </div>
+      <div className="flex justify-center gap-4 text-sm">
+        <div className="flex items-center gap-2">
+          <div className="w-4 h-4 bg-green-500"></div>
+          <span>Normal</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-4 h-4 bg-yellow-500"></div>
+          <span>Compare</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-4 h-4 bg-red-500"></div>
+          <span>Swap</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <div className="w-4 h-4 bg-blue-500"></div>
+          <span>Complete</span>
+        </div>
+      </div>
 
-      <div className="mt-4">
-        <div className="bg-gray-50 p-4 rounded-md">
+      <div>
+        <div className="p-2 rounded-md">
           {algorithm === "insertion" && (
             <p>
               <strong>Insertion Sort:</strong> A simple sorting algorithm that builds the final sorted array one item at

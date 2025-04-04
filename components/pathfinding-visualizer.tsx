@@ -507,7 +507,7 @@ export default function PathfindingVisualizer() {
       </div>
 
       <div
-        className="grid gap-[1px] bg-gray-200 border rounded-md p-1 mx-auto"
+        className="grid border rounded-md p-1 mx-auto"
         style={{
           gridTemplateRows: `repeat(${ROWS}, 1fr)`,
           gridTemplateColumns: `repeat(${COLS}, 1fr)`,
@@ -563,7 +563,7 @@ export default function PathfindingVisualizer() {
       </div>
 
       <div className="mt-4">
-        <div className="bg-gray-50 p-4 rounded-md">
+        <div className="p-4 rounded-md">
           {algorithm === "dijkstra" && (
             <p>
               <strong>Dijkstra's Algorithm:</strong> A weighted graph search algorithm that finds the shortest path
