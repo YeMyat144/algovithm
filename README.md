@@ -1,4 +1,4 @@
-# Algorithm Visualizer
+# Algovithm
 
 An interactive web application for visualizing sorting and pathfinding algorithms. This educational tool helps users understand how different algorithms work through step-by-step visual animations.
 
