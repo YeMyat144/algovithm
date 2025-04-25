@@ -26,17 +26,3 @@ An interactive web application for visualizing sorting and pathfinding algorithm
 
 Check out the live demo: [Algovithm Demo](https://algovithm.vercel.app/)
 
-## Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/algovithm.git
-
-# Navigate to the project directory
-cd algorithm-visualizer
-
-# Install dependencies
-npm install
-
-# Start the development server
-npm run dev
